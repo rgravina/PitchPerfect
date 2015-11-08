@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		972D92831BECF6FF00817AAB /* PitchPerfact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		972D92831BECF6FF00817AAB /* PitchPerfect.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972D92861BECF6FF00817AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972D92881BECF6FF00817AAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		972D928B1BECF6FF00817AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		972D92841BECF6FF00817AAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				972D92831BECF6FF00817AAB /* PitchPerfact.app */,
+				972D92831BECF6FF00817AAB /* PitchPerfect.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,9 +69,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		972D92821BECF6FF00817AAB /* PitchPerfact */ = {
+		972D92821BECF6FF00817AAB /* PitchPerfect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 972D92951BECF6FF00817AAB /* Build configuration list for PBXNativeTarget "PitchPerfact" */;
+			buildConfigurationList = 972D92951BECF6FF00817AAB /* Build configuration list for PBXNativeTarget "PitchPerfect" */;
 			buildPhases = (
 				972D927F1BECF6FF00817AAB /* Sources */,
 				972D92801BECF6FF00817AAB /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = PitchPerfact;
+			name = PitchPerfect;
 			productName = PitchPerfact;
-			productReference = 972D92831BECF6FF00817AAB /* PitchPerfact.app */;
+			productReference = 972D92831BECF6FF00817AAB /* PitchPerfect.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 972D927E1BECF6FF00817AAB /* Build configuration list for PBXProject "PitchPerfact" */;
+			buildConfigurationList = 972D927E1BECF6FF00817AAB /* Build configuration list for PBXProject "PitchPerfect" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				972D92821BECF6FF00817AAB /* PitchPerfact */,
+				972D92821BECF6FF00817AAB /* PitchPerfect */,
 			);
 		};
 /* End PBXProject section */
@@ -251,8 +251,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PitchPerfact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gravina.robert.PitchPerfact;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravina.robert.PitchPerfect;
+				PRODUCT_NAME = PitchPerfect.temp_caseinsensitive_rename;
 			};
 			name = Debug;
 		};
@@ -262,15 +262,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PitchPerfact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gravina.robert.PitchPerfact;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gravina.robert.PitchPerfect;
+				PRODUCT_NAME = PitchPerfect.temp_caseinsensitive_rename;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		972D927E1BECF6FF00817AAB /* Build configuration list for PBXProject "PitchPerfact" */ = {
+		972D927E1BECF6FF00817AAB /* Build configuration list for PBXProject "PitchPerfect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				972D92931BECF6FF00817AAB /* Debug */,
@@ -279,7 +279,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		972D92951BECF6FF00817AAB /* Build configuration list for PBXNativeTarget "PitchPerfact" */ = {
+		972D92951BECF6FF00817AAB /* Build configuration list for PBXNativeTarget "PitchPerfect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				972D92961BECF6FF00817AAB /* Debug */,
