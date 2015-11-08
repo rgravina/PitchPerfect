@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
   @IBOutlet weak var recordingLabel: UILabel!
+  @IBOutlet weak var stopButton: UIButton!
+  @IBOutlet weak var microphoneButton: UIButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    stopButton.hidden = true
   }
+
+//  override func viewWillAppear(animated: Bool) {
+//    super.viewWillAppear(animated)
+//  }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -22,10 +28,14 @@ class ViewController: UIViewController {
   }
 
   @IBAction func recordAudio(sender: UIButton) {
+    microphoneButton.enabled = false
     recordingLabel.hidden = false
+    stopButton.hidden = false
   }
 
   @IBAction func stopRecordingAudio(sender: UIButton) {
+    microphoneButton.enabled = true
     recordingLabel.hidden = true
+    stopButton.hidden = true
   }
 }
