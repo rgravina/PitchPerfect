@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfact" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,37 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tOr-FJ-Wi6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN8-Yb-wUY">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3WB-cp-tfi">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN8-Yb-wUY">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                <animations/>
-                                                <state key="normal" image="Microphone"/>
-                                            </button>
-                                        </subviews>
-                                        <animations/>
-                                    </stackView>
-                                </subviews>
                                 <animations/>
-                            </stackView>
+                                <state key="normal" image="Microphone"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSP-48-Dkr"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2F-x8-GFA">
+                                <rect key="frame" x="263" y="358" width="74" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" red="0.10196078431372549" green="0.2196078431372549" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBc-oE-fJi">
+                                <rect key="frame" x="250" y="492" width="100" height="100"/>
+                                <animations/>
+                                <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopRecordingAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WkY-RL-eSD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tOr-FJ-Wi6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7g0-Fa-XJM"/>
-                            <constraint firstItem="tOr-FJ-Wi6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uob-74-C46"/>
+                            <constraint firstItem="v2F-x8-GFA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7FX-eb-lmU"/>
+                            <constraint firstItem="v2F-x8-GFA" firstAttribute="top" secondItem="IN8-Yb-wUY" secondAttribute="bottom" constant="8" id="dlz-SB-d9m"/>
+                            <constraint firstItem="IN8-Yb-wUY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gTh-hI-PI1"/>
+                            <constraint firstItem="wBc-oE-fJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o6M-wp-3HC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wBc-oE-fJi" secondAttribute="bottom" constant="8" id="wz3-Lu-rfH"/>
+                            <constraint firstItem="IN8-Yb-wUY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y4L-ed-Kmo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="v2F-x8-GFA" id="6SQ-wa-xKK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="253" y="136"/>
         </scene>
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="Stop" width="100" height="100"/>
     </resources>
 </document>

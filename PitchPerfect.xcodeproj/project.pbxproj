@@ -38,7 +38,7 @@
 		972D927A1BECF6FF00817AAB = {
 			isa = PBXGroup;
 			children = (
-				972D92851BECF6FF00817AAB /* PitchPerfact */,
+				972D92851BECF6FF00817AAB /* PitchPerfect */,
 				972D92841BECF6FF00817AAB /* Products */,
 			);
 			indentWidth = 2;
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		972D92851BECF6FF00817AAB /* PitchPerfact */ = {
+		972D92851BECF6FF00817AAB /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
 				972D92861BECF6FF00817AAB /* AppDelegate.swift */,
@@ -63,7 +63,7 @@
 				972D928F1BECF6FF00817AAB /* LaunchScreen.storyboard */,
 				972D92921BECF6FF00817AAB /* Info.plist */,
 			);
-			path = PitchPerfact;
+			path = PitchPerfect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,10 +249,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PitchPerfact/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PitchPerfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gravina.robert.PitchPerfect;
-				PRODUCT_NAME = PitchPerfect.temp_caseinsensitive_rename;
+				PRODUCT_NAME = PitchPerfect;
 			};
 			name = Debug;
 		};
@@ -260,10 +260,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PitchPerfact/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PitchPerfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gravina.robert.PitchPerfect;
-				PRODUCT_NAME = PitchPerfect.temp_caseinsensitive_rename;
+				PRODUCT_NAME = PitchPerfect;
 			};
 			name = Release;
 		};
@@ -286,6 +286,7 @@
 				972D92971BECF6FF00817AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
