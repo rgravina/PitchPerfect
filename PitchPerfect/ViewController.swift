@@ -15,12 +15,12 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    stopButton.hidden = true
   }
 
-//  override func viewWillAppear(animated: Bool) {
-//    super.viewWillAppear(animated)
-//  }
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    stopButton.hidden = true
+  }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
