@@ -12,16 +12,18 @@
 		972D928C1BECF6FF00817AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972D928A1BECF6FF00817AAB /* Main.storyboard */; };
 		972D928E1BECF6FF00817AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972D928D1BECF6FF00817AAB /* Assets.xcassets */; };
 		972D92911BECF6FF00817AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972D928F1BECF6FF00817AAB /* LaunchScreen.storyboard */; };
+		97EA00981BF22A440049B56D /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA00971BF22A440049B56D /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		972D92831BECF6FF00817AAB /* PitchPerfect.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		972D92831BECF6FF00817AAB /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972D92861BECF6FF00817AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972D92881BECF6FF00817AAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		972D928B1BECF6FF00817AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		972D928D1BECF6FF00817AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972D92901BECF6FF00817AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		972D92921BECF6FF00817AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EA00971BF22A440049B56D /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		972D92841BECF6FF00817AAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				972D92831BECF6FF00817AAB /* PitchPerfect.temp_caseinsensitive_rename.app */,
+				972D92831BECF6FF00817AAB /* PitchPerfect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +64,7 @@
 				972D928D1BECF6FF00817AAB /* Assets.xcassets */,
 				972D928F1BECF6FF00817AAB /* LaunchScreen.storyboard */,
 				972D92921BECF6FF00817AAB /* Info.plist */,
+				97EA00971BF22A440049B56D /* PlaySoundsViewController.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -83,7 +86,7 @@
 			);
 			name = PitchPerfect;
 			productName = PitchPerfact;
-			productReference = 972D92831BECF6FF00817AAB /* PitchPerfect.temp_caseinsensitive_rename.app */;
+			productReference = 972D92831BECF6FF00817AAB /* PitchPerfect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972D92891BECF6FF00817AAB /* ViewController.swift in Sources */,
+				97EA00981BF22A440049B56D /* PlaySoundsViewController.swift in Sources */,
 				972D92871BECF6FF00817AAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "972D92821BECF6FF00817AAB"
-               BuildableName = "PitchPerfect.temp_caseinsensitive_rename.app"
+               BuildableName = "PitchPerfect.app"
                BlueprintName = "PitchPerfect"
                ReferencedContainer = "container:PitchPerfect.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "972D92821BECF6FF00817AAB"
-            BuildableName = "PitchPerfect.temp_caseinsensitive_rename.app"
+            BuildableName = "PitchPerfect.app"
             BlueprintName = "PitchPerfect"
             ReferencedContainer = "container:PitchPerfect.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "972D92821BECF6FF00817AAB"
-            BuildableName = "PitchPerfect.temp_caseinsensitive_rename.app"
+            BuildableName = "PitchPerfect.app"
             BlueprintName = "PitchPerfect"
             ReferencedContainer = "container:PitchPerfect.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "972D92821BECF6FF00817AAB"
-            BuildableName = "PitchPerfect.temp_caseinsensitive_rename.app"
+            BuildableName = "PitchPerfect.app"
             BlueprintName = "PitchPerfect"
             ReferencedContainer = "container:PitchPerfect.xcodeproj">
          </BuildableReference>
