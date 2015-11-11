@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
+  var audioPlayer:AVAudioPlayer!
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    if let filePath = NSBundle.mainBundle().pathForResource("quote", ofType: "m4a") {
+      let filePathURL = NSURL(fileURLWithPath: filePath)
+      audioPlayer = try? AVAudioPlayer(contentsOfURL: filePathURL)
+    } else {
+      print("Could not find quote.m4a in the app bundle.");
+    }
+  }
 
   @IBAction func playSoundSlowly(sender: UIButton) {
+    audioPlayer.play()
   }
 }
