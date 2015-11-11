@@ -104,12 +104,32 @@
                                     <action selector="playSoundSlowly:" destination="fYE-dS-j39" eventType="touchUpInside" id="DoS-ae-oNC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cej-Ni-INK">
+                                <rect key="frame" x="480" y="114" width="100" height="100"/>
+                                <animations/>
+                                <state key="normal" image="Fast"/>
+                                <connections>
+                                    <action selector="playSoundQuickly:" destination="fYE-dS-j39" eventType="touchUpInside" id="upO-V7-abU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2l-H4-dGY">
+                                <rect key="frame" x="275" y="542" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopPlayingSound:" destination="fYE-dS-j39" eventType="touchUpInside" id="Svt-cR-psp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Cej-Ni-INK" firstAttribute="top" secondItem="Xe1-fF-Iac" secondAttribute="bottom" constant="50" id="1nJ-rS-ElE"/>
+                            <constraint firstItem="Cej-Ni-INK" firstAttribute="trailing" secondItem="5oc-yx-V83" secondAttribute="trailingMargin" id="EcL-KX-mlA"/>
                             <constraint firstItem="Qzv-Oc-bTH" firstAttribute="top" secondItem="Xe1-fF-Iac" secondAttribute="bottom" constant="50" id="RVs-wP-TkI"/>
                             <constraint firstItem="Qzv-Oc-bTH" firstAttribute="leading" secondItem="5oc-yx-V83" secondAttribute="leadingMargin" id="j5U-Oj-Ng9"/>
+                            <constraint firstItem="Rm2-VQ-uNI" firstAttribute="top" secondItem="L2l-H4-dGY" secondAttribute="bottom" constant="8" id="uVJ-Ll-4vD"/>
+                            <constraint firstItem="L2l-H4-dGY" firstAttribute="centerX" secondItem="5oc-yx-V83" secondAttribute="centerX" id="zEn-ma-weF"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -119,6 +139,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fast" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Slow" width="100" height="100"/>
         <image name="Stop" width="50" height="50"/>
