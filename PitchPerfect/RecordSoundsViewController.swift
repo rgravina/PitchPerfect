@@ -54,6 +54,7 @@ class RecordSoundsViewController: UIViewController {
     microphoneButton.enabled = true
     recordingLabel.hidden = true
     stopButton.hidden = true
+    audioRecorder.stop()
     let session = AVAudioSession.sharedInstance()
     try! session.setActive(false)
   }
