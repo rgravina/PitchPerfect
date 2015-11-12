@@ -9,11 +9,13 @@
 import UIKit
 import AVFoundation
 
-class RecordSoundsViewController: UIViewController {
+class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
   @IBOutlet weak var recordingLabel: UILabel!
   @IBOutlet weak var stopButton: UIButton!
   @IBOutlet weak var microphoneButton: UIButton!
-  var audioRecorder:AVAudioRecorder!
+
+  var audioRecorder: AVAudioRecorder!
+  var recordedAudio: RecordedAudio!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -45,9 +47,23 @@ class RecordSoundsViewController: UIViewController {
     let session = AVAudioSession.sharedInstance()
     try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
     try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+    audioRecorder.delegate = self
     audioRecorder.meteringEnabled = true
     audioRecorder.prepareToRecord()
     audioRecorder.record()
+  }
+
+  func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
+    if (flag) {
+      recordedAudio = RecordedAudio()
+      recordedAudio.filePathURL = recorder.url
+      recordedAudio.title = recorder.url.lastPathComponent
+      self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+    } else {
+      print("Recording was not successful.")
+      microphoneButton.enabled = true
+      stopButton.hidden = true
+    }
   }
 
   @IBAction func stopRecordingAudio(sender: UIButton) {
