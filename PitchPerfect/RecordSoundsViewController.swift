@@ -34,12 +34,9 @@ class RecordSoundsViewController: UIViewController {
     recordingLabel.hidden = false
     stopButton.hidden = false
 
-    // Save file in documents dir with a filename based on the current timestamp (to avoid conflicts)
+    // Save recording.wav in documents dir
     let documentDirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
-    let currentDateTime = NSDate()
-    let formatter = NSDateFormatter()
-    formatter.dateFormat = "ddMMyyyy-HHmmss"
-    let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
+    let recordingName = "recording.wav"
     let pathArray = [documentDirPath, recordingName]
     let filePath = NSURL.fileURLWithPathComponents(pathArray)
     print(filePath)
