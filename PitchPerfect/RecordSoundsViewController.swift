@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RecordSoundsViewController: UIViewController {
   @IBOutlet weak var recordingLabel: UILabel!
   @IBOutlet weak var stopButton: UIButton!
   @IBOutlet weak var microphoneButton: UIButton!
+  var audioRecorder:AVAudioRecorder!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,11 +33,31 @@ class RecordSoundsViewController: UIViewController {
     microphoneButton.enabled = false
     recordingLabel.hidden = false
     stopButton.hidden = false
+
+    // Save file in documents dir with a filename based on the current timestamp (to avoid conflicts)
+    let documentDirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+    let currentDateTime = NSDate()
+    let formatter = NSDateFormatter()
+    formatter.dateFormat = "ddMMyyyy-HHmmss"
+    let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
+    let pathArray = [documentDirPath, recordingName]
+    let filePath = NSURL.fileURLWithPathComponents(pathArray)
+    print(filePath)
+
+    // create an audiosession and record
+    let session = AVAudioSession.sharedInstance()
+    try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+    try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+    audioRecorder.meteringEnabled = true
+    audioRecorder.prepareToRecord()
+    audioRecorder.record()
   }
 
   @IBAction func stopRecordingAudio(sender: UIButton) {
     microphoneButton.enabled = true
     recordingLabel.hidden = true
     stopButton.hidden = true
+    let session = AVAudioSession.sharedInstance()
+    try! session.setActive(false)
   }
 }
