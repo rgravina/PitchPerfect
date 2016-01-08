@@ -119,6 +119,14 @@
                                     <action selector="playChipmunkAudio:" destination="fYE-dS-j39" eventType="touchUpInside" id="uXe-AG-QOH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86H-ln-vXg">
+                                <rect key="frame" x="480" y="224" width="100" height="100"/>
+                                <state key="normal" image="Darth"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="fYE-dS-j39" eventType="touchUpInside" id="7Xm-1O-aZC"/>
+                                    <action selector="playDarthvaderAudio:" destination="fYE-dS-j39" eventType="touchUpInside" id="KPZ-Qj-kIK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -127,6 +135,8 @@
                             <constraint firstItem="Rkr-8R-DtJ" firstAttribute="top" secondItem="Qzv-Oc-bTH" secondAttribute="bottom" constant="30" id="FOE-e2-IbF"/>
                             <constraint firstItem="Rkr-8R-DtJ" firstAttribute="leading" secondItem="5oc-yx-V83" secondAttribute="leadingMargin" id="GfS-XM-3vG"/>
                             <constraint firstItem="Qzv-Oc-bTH" firstAttribute="top" secondItem="Xe1-fF-Iac" secondAttribute="bottom" constant="30" id="RVs-wP-TkI"/>
+                            <constraint firstItem="86H-ln-vXg" firstAttribute="trailing" secondItem="5oc-yx-V83" secondAttribute="trailingMargin" id="VCa-1k-TDo"/>
+                            <constraint firstItem="86H-ln-vXg" firstAttribute="top" secondItem="Cej-Ni-INK" secondAttribute="bottom" constant="30" id="iZv-Iu-UAH"/>
                             <constraint firstItem="Qzv-Oc-bTH" firstAttribute="leading" secondItem="5oc-yx-V83" secondAttribute="leadingMargin" id="j5U-Oj-Ng9"/>
                             <constraint firstItem="Rm2-VQ-uNI" firstAttribute="top" secondItem="L2l-H4-dGY" secondAttribute="bottom" constant="8" id="uVJ-Ll-4vD"/>
                             <constraint firstItem="L2l-H4-dGY" firstAttribute="centerX" secondItem="5oc-yx-V83" secondAttribute="centerX" id="zEn-ma-weF"/>
@@ -140,6 +150,7 @@
     </scenes>
     <resources>
         <image name="Chipmunk" width="100" height="100"/>
+        <image name="Darth" width="100" height="100"/>
         <image name="Fast" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Slow" width="100" height="100"/>
